@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/etExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Expense Amount"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etExpense"
+        android:layout_alignRight="@+id/etExpense"
+        android:layout_below="@+id/etExpense"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etWho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNote"
+        android:layout_alignRight="@+id/etNote"
+        android:layout_below="@+id/etNote"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Who"
+        android:inputType="textShortMessage" />
+
+</RelativeLayout>
